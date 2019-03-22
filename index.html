@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Website Bookmarker</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy"
+				>You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.</p
+			>
+		<![endif]-->
+
+		<nav>
+			<a href="#top">Marked</a>
+		</nav>
+
+		<h1 id="top">Bookmark App</h1>
+
+		<form action="" id="myForm">
+			<fieldset name="New-Bookmark">
+				<h3>Add New Bookmark</h3>
+				<dialog id="newBookmarkConfirmation">New Bookmark Saved!</dialog>
+				<label for="Site Name">
+					Site Name
+				</label>
+				<input type="text" id="siteName" autofocus required />
+				<label for="URL" class="URLLabel">
+					URL
+				</label>
+				<input type="text" id="siteURL" required />
+				<button type="submit" id="addBookmark" class="activeAddButton"
+					>Add Bookmark</button
+				>
+			</fieldset>
+		</form>
+
+		<article>
+			<h3>Saved Bookmarks</h3>
+			<ul>
+				<li class="bookmarkOutputs" id="bookmarkResults"></li>
+			</ul>
+		</article>
+
+		<footer>&copy; Marked, Inc 2019</footer>
+
+		<script src="script.js" async defer></script>
+	</body>
+</html>
